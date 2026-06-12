@@ -3,195 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <title>FUMIDRONE</title>
-<!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
   <header>
     <h1>FUMIDRONE</h1>
-    <p>Empresa costarrricense dedicada a la fumigación con drones</p>
-    <img src="Assets\Frame-6.png"
-         alt="Logo de FUMIDRONE" width="200">
+    <p>Empresa costarricense dedicada a la fumigación con drones</p>
   </header>
 
-  <!-- Barra de navegación (navigation bar o navbar): Sección de una página que contiene enlaces para desplazarse entre las distintas páginas o secciones de un sitio. 
-    Sintaxis: 
-        <nav>: define una sección de navegación.
-        <a>: crea enlaces a otras páginas o secciones.
-        href: especifica el destino del enlace.
-        aria-current="page": Indica que es la página actual (el lector de pantalla anunciará que "Inicio" es la página actual.)
-    -->
-    <nav>
-        <a href="#Fumidrone">Fumidrone</a> <!--a: Enlace-->
-        <a href="">Semana 1</a> <!--a: Enlace-->
-        <a href="">Semana 2</a> <!--a: Enlace-->
-        <a href="">Semana 3</a> <!--a: Enlace-->
-        <a href="">Semana 4</a> <!--a: Enlace-->
-        <a href="#habilidadesBlandas">Habilidades blandas</a> <!--a: Enlace-->
-        <a href="https://fontawesome.com/search?q=code">FontAwesome</a> <!--a: Enlace-->
-
-    </nav>
+  <nav>
+    <a href="#sobreNosotros">Sobre nosotros</a>
+    <a href="#cultivos">Cultivos</a>
+    <a href="#flotilla">Flotilla</a>
+    <a href="https://ag.dji.com/" target="_blank">DJI Agriculture</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
 
   <hr>
 
-
   <main>
 
+    <!-- Sección Sobre nosotros -->
+    <section id="sobreNosotros">
+      <h2>Sobre nosotros</h2>
+      <p>Somos una empresa costarricense dedicada a la fumigación con drones, pioneros en la fumigación del cultivo de café en la Zona de Los Santos.</p>
 
-
-    <!-- Sección sobre el restaurante -->
-    <h2>Sobre nosotros</h2>
-    <p>Somos una empresa costarrricense dedicada a la fumigación con drones, somos pioneros en la fumigación del cultivo de café en la Zona de Los Santos.</p>
-
-    <img src="Assets\WhatsApp Image 2026-05-29 at 15.58.29.jpeg"
-            alt="Imagen de un drone fumigando un cultivo de café" width="400">
+      <img src="Assets\WhatsApp Image 2026-05-29 at 15.58.29.jpeg" alt="Drone de FUMIDRONE fumigando un cultivo de café" width="400">
+    </section>
 
     <hr>
 
-    <!-- Cartera de cultivos --> 
-    <h2>Cartera de cultivos</h2>
-    <p>Estos son los cultivos que fumigamos:</p>
-
-    <h3>Ofrecemos el servicio de fumigación en:</h3>
-
-    <ul>
-      <li>Café</li>
-      <li>Maíz</li>
-      <li>Cítricos</li>
-    </ul>
-
-    <h3>Beneficios de la fumigación con drones</h3>
-    <p>Además de ser más eficiente y seguro, la fumigación con drones permite un control más preciso del pesticida, reduciendo el desperdicio y el impacto ambiental.</p>
-
-    <ol>
-      <li>Reducción de costos</li>
-      <li>Reducción del uso de pesticidas</li>
-      <li>Recopilación de datos</li>
-    </ol>
-
-    <br>
-
-    <h2>Flotilla de drones</h2>
-    <p> En nuestra flota contamos con drones de última generación de la marca DJI. El DJI Agras T100 es el drone más grande del mercado costarricense.</p>
-    <img src="Assets\WhatsApp Image 2026-05-29 at 15.58.29 (1).jpeg"
-         alt="Imagen de drone T100" width="400">
-    <p>Estamos al servicio del agricultor costarricense.</p>
+    <!-- Sección Cultivos -->
+    <section id="cultivos">
+      <h2>Cartera de cultivos</h2>
+      <p>Estos son los cultivos que fumigamos:</p>
 
       <ol>
-      <li>Contáctanos al 8821 2618</li>  <i class="fa-solid fa-mobile"></i>"aria-hidden="true"></i>
-      <li>Síguenos en redes sociales</li>
-      <li>Instagram: @fumidrone_</li>
-    </ol>
+        <li>Café</li>
+        <li>Maíz</li>
+        <li>Cítricos</li>
+        <li>Caña de azúcar</li>
+      </ol>
 
-    <!--Iconos-->
+      <h3>Beneficios de la fumigación con drones</h3>
+      <p>Además de ser más eficiente y seguro, la fumigación con drones permite un control más preciso del pesticida, reduciendo el desperdicio y el impacto ambiental.</p>
 
-    <i class="fa-regular fa-user"></i>
+      <table border="1">
+        <caption>Servicios de fumigación disponibles</caption>
+        <thead>
+          <tr>
+            <th>Cultivo</th>
+            <th>Tipo de drone</th>
+            <th>Área cubierta (ha)</th>
+            <th>Tiempo estimado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Café</td>
+            <td>DJI Agras T100</td>
+            <td>5</td>
+            <td>30 min</td>
+          </tr>
+          <tr>
+            <td>Maíz</td>
+            <td>DJI Agras T40</td>
+            <td>8</td>
+            <td>45 min</td>
+          </tr>
+          <tr>
+            <td>Cítricos</td>
+            <td>DJI Agras T30</td>
+            <td>4</td>
+            <td>25 min</td>
+          </tr>
+          <tr>
+            <td>Caña de azúcar</td>
+            <td>DJI Agras T100</td>
+            <td>10</td>
+            <td>60 min</td>
+          </tr>
+          <tr>
+            <td>Hortalizas</td>
+            <td>DJI Agras T40</td>
+            <td>3</td>
+            <td>20 min</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    <!-- Video
-            controls: Proporciona controles estándar accesibles para teclado y lectores de pantalla.
-            kind="captions": subtítulos con diálogos y sonidos relevantes.
-            srclang: idioma.
-            default: activa esa pista por defecto.
-            No utilizar: autoplay: El contenido que se reproduce automáticamente puede resultar molesto y dificultar el uso de lectores de pantalla.
-         -->
-         <video src="test.mp4" controls width="500px">
-            Su navegador no soporta la reproducción de video.
-            <track
-                kind="captions"
-                src="subtitulos-en.vtt"
-                srclang="en"
-                label="Inglés - en"
-            />
-         </video>
+    <hr>
 
-         <!-- Audio 
-            <audio>: define el reproductor de audio. 
-            controls: muestra los controles de reproducción, pausa y volumen.
-            <source>: especifica el archivo de audio.
-            El texto alternativo dentro de <audio> se muestra si el navegador no soporta audio. 
-        -->
-         <audio src="test.mp3" controls>
-            
-         </audio>
-  
-         <audio src="test.mp3" controls>
-            Su navegador no soporta el elemento audio.
-         </audio>
+    <!-- Sección Flotilla -->
+    <section id="flotilla">
+      <h2>Flotilla de drones</h2>
+      <p>En nuestra flota contamos con drones de última generación de la marca DJI. El DJI Agras T100 es el drone más grande del mercado costarricense.</p>
 
-         <audio controls>
-            Su navegador no soporta el elemento audio.
-            <source 
-                src="test.mp3"
-            />
-         </audio>
+      <img src="Assets\WhatsApp Image 2026-05-29 at 15.58.29.jpeg" alt="Drone DJI Agras T100 de FUMIDRONE" width="400">
 
-        <!-- Tablas: Representar información organizada
-          Sintaxis:  
-            table: Define la tabla
-            caption: Título de la tabla
-            <tr> (Table Row): Representa una fila. Cada fila puede contener encabezados (<th>) o datos (<td>).
-            <th> (Table Header): Representa una celda de encabezado. Los navegadores suelen mostrarla en negrita y centrada. Los lectores de pantalla la utilizan para identificar los encabezados de las columnas o filas.
-            <td> (Table Data): Representa una celda de datos. Contiene los datos normales de la tabla.
-        
-          
-         -->
+      <video src="Assets\WhatsApp Video 2026-06-12 at 08.59.00.mp4" controls width="500">
+        Su navegador no soporta la reproducción de video.
+      </video>
 
-         <table>
-            <caption> <!--Nombre de la tabla -->
-                Lista de estudiantes
-            </caption>
+      <p>Estamos al servicio del agricultor costarricense.</p>
 
-            <tr> <!-- Filas -->
-                <th>Nombre</th> <!-- Encabezado -->
-                <th>Correo</th> <!-- Encabezado -->
-                <th>Dirección</th> <!-- Encabezado -->
-            </tr>
-
-            <tr> <!-- Fila 2 -->
-                <td>Luis Corella</td> <!-- Dato común/normal -->
-                <td>lcorella@test.ac.cr</td>
-                <td>Lugar 1</td>
-                
-            </tr>
-
-            <tr>
-                <td>Andrés Gamboa</td> <!-- Dato común/normal -->
-                <td>agamboa@test.ac.cr</td>
-                <td>Lugar 2</td>
-            </tr>
-
-            <tr>
-                <td>Karlina Contreras</td> <!-- Dato común/normal -->
-                <td>kcontreras@test.ac.cr</td>
-                <td>Lugar 3</td>
-            </tr>
-
-
-            <tr>
-                <td>Daniel Rojas</td> <!-- Dato común/normal -->
-                <td>drojas@test.ac.cr</td>
-                <td>Lugar 4</td>
-            </tr>
-
-            <tr>
-                <td>Xinia Jara</td> <!-- Dato común/normal -->
-                <td>xjara@test.ac.cr</td>
-                <td>Lugar 5</td>
-            </tr>
-
-         </table>
-
-    />
+      <p>
+        <i class="fa-solid fa-leaf"></i>
+        <i class="fa-solid fa-helicopter"></i>
+        <i class="fa-solid fa-seedling"></i>
+      </p>
+    </section>
 
   </main>
 
-  <!-- Pie de página <footer>: Contiene información complementaria, como datos de contacto, derechos de autor, enlaces legales, redes sociales o información del autor. -->
-    <footer>
-        <a href="https://fontawesome.com/search?q=code">Descargue nuestra aplicación en la Play Store </a>
-        <p>&copy; 2026. Todos los derechos reservados.</p>
-    </footer>
+  <footer>
+    <p>Contáctanos al 8821 2618 | Correo: info@fumidrone.cr</p>
+    <p>Síguenos en Instagram: @fumidrone_</p>
+    <p>&copy; 2026. Melissa Rojas. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
