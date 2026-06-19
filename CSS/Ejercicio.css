@@ -1,0 +1,234 @@
+/* ===== VARIABLES / TOKENS ===== */
+:root {
+    --color-navy:       #1e2a3e;
+    --color-bg:         #f5f7fc;
+    --color-white:      #ffffff;
+    --color-primary:    #4a90e2;
+    --color-primary-hover: #357abd;
+    --color-secondary-border: #d0d7e3;
+    --color-text:       #1e2a3e;
+    --color-subtitle:   #6b7a99;
+    --color-stat-highlight: #4a90e2;
+    --color-footer:     #9aa3b5;
+    --shadow-card:      0 8px 32px rgba(30, 42, 62, 0.10);
+    --radius-card:      20px;
+    --radius-btn:       50px;
+    --font-main:        system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ===== RESET / BASE ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    min-height: 56px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.logo i {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+/* Lista de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+}
+
+.nav-links li a {
+    color: var(--color-white);
+    padding: 10px 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a[aria-current="page"] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Ícono de usuario */
+.user-icon {
+    font-size: 20px;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.user-icon:hover {
+    opacity: 0.75;
+}
+
+/* ===== MAIN / CARD CONTAINER ===== */
+main.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 12px;
+    flex: 1;
+}
+
+/* ===== TARJETA DE PERFIL ===== */
+.profile-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 32px 32px;
+    gap: 12px;
+}
+
+/* ===== AVATAR ===== */
+img.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-primary);
+    margin-bottom: 4px;
+}
+
+/* ===== NOMBRE Y SUBTÍTULO ===== */
+.profile-card h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-subtitle);
+    letter-spacing: 0.02em;
+}
+
+/* ===== BOTONES ===== */
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 22px;
+    border-radius: var(--radius-btn);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    font-family: var(--font-main);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Botón primario */
+.btn.primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn.primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Botón secundario */
+.btn.secondary {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    border: 1.5px solid var(--color-secondary-border);
+}
+
+.btn.secondary:hover {
+    background-color: var(--color-bg);
+}
+
+/* ===== ESTADÍSTICAS ===== */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    border-top: 1px solid #eef0f6;
+    margin-top: 8px;
+    padding-top: 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+}
+
+/* Separador entre estadísticas */
+.stat-item + .stat-item {
+    border-left: 1px solid #eef0f6;
+}
+
+.stat-item strong {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.stat-item span {
+    font-size: 0.78rem;
+    color: var(--color-subtitle);
+}
+
+/* Estadística resaltada (Publicaciones) */
+.stat-item.stat-highlight strong {
+    color: var(--color-stat-highlight);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 0.78rem;
+    color: var(--color-footer);
+}

@@ -1,0 +1,32 @@
+/*
+Selectores: Identificar y delimitar los elementos HTML a los que se aplicarán estilos específicos. 
+selector {
+    propiedad: valor;
+    otra-propiedad: valor;
+}
+
+*/
+
+/* Selector por etiqueta */
+h2, li{
+    color: rgb(46, 149, 23);
+}
+
+/* Selector por clase */
+.borde{
+    border: 2px solid lab(52.23% -42.98 18.67);
+}
+
+.borde-2{
+    border: 5px solid rgb(12, 38, 139);
+}
+
+.importante{
+    color: rgb(255, 0, 0);
+    font-size: 44px;
+}
+
+/* Selector por id */
+#piePagina{
+   cursor: help;
+}
